@@ -13,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent[400],
+      backgroundColor: Color.fromRGBO(250, 128, 114, 1.0),
       appBar: null,
       body: SingleChildScrollView(
         child: Column(children: [
@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
           const SizedBox(
             height: 5,
           ),
-          topText("AM BUSSIN", weightFontOne),
+          topText("UM Connect", weightFontOne),
           topText("LOGIN", weightFontTwo),
           const SizedBox(
             height: 30,
@@ -106,7 +106,8 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {},
               child: const Text(
                 'LOGIN',
-                style: TextStyle(fontSize: 15, color: Colors.yellow),
+                style: TextStyle(
+                    fontSize: 15, color: Color.fromRGBO(250, 128, 114, 1.0)),
               ),
             ),
             const SizedBox(
@@ -115,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
             GestureDetector(
               onTap: () {},
               child: const Text(
-                "New user? Register Now",
+                "New user? Sign Up",
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
               ),
             )
